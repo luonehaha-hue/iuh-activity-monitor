@@ -25,6 +25,8 @@ Các hoạt động có số lượng đăng ký giới hạn có thể mở ho�
 
 Ảnh đã được làm mờ tên và avatar thành viên để bảo vệ quyền riêng tư.
 
+Tham gia cộng đồng và xem bot hoạt động: **[Discord — Thông Báo Slot](https://discord.gg/CMAvSEgcjk)**.
+
 ## Kiến trúc
 
 ```mermaid
