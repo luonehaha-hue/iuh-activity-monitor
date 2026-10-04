@@ -1,0 +1,12 @@
+[Unit]
+Description=Update IUH DRL bot Telegram health status every minute
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=60s
+AccuracySec=5s
+Persistent=true
+Unit=iuh-drl-health.service
+
+[Install]
+WantedBy=timers.target

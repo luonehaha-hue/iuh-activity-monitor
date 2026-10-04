@@ -1,0 +1,39 @@
+# File cau hinh bao mat chua Token & Cookie
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Moi truong ao venv
+venv/
+env/
+.venv/
+
+# Runtime data and logs
+logs/
+data/
+state/
+*.log
+.coverage
+.pytest_cache/
+.ruff_cache/
+
+# Session/cookie/token exports
+*session*
+*cookie*
+*.token
+*.secret
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local donation page contains personal banking information
+donate.html
+donate_builder.py

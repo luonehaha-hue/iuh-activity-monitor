@@ -1,0 +1,19 @@
+[Unit]
+Description=IUH DRL bot Telegram health status updater
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=iuh-drl-bot
+Group=iuh-drl-bot
+WorkingDirectory=/opt/iuh-drl-bot
+EnvironmentFile=/opt/iuh-drl-bot/.env
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/opt/iuh-drl-bot/venv/bin/python3 /opt/iuh-drl-bot/health_watchdog.py
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/iuh-drl-bot/data
